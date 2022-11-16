@@ -1,6 +1,7 @@
 requests
 python-firebase
 git+https://github.com/ozgur/python-firebase
+Jinja2==2.10.3
 flask==1.1.4
 flask-cors
 numpy==1.19.5
