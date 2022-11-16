@@ -12,3 +12,4 @@ pymysql
 mysql-connector-python
 mysqlclient
 gunicorn
+favicon
