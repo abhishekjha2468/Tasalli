@@ -31,7 +31,7 @@ def pages_render(section):
 #     f.close()
     return render_template(section+".html")
 
-@app.route("/", methods=['GET'])
+@app.route("/", methods=['GET','POST'])
 def Landing_page():
 #     f=open("homepage_expert.html","r")
 #     text=f.read()
@@ -39,7 +39,7 @@ def Landing_page():
     return render_template("homepage_expert.html")
 
 
-@app.route("/home", methods=['GET'])
+@app.route("/home", methods=['GET','POST'])
 def home():
     return render_template("homepage_expert.html")
 
