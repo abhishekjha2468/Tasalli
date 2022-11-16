@@ -7,7 +7,7 @@ import itertools
 import numpy
 from flask import Flask, request, render_template, jsonify
 from flask_ngrok import run_with_ngrok
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, redirect, url_for
 from werkzeug.utils import secure_filename
 from werkzeug.datastructures import  FileStorage
 import os
