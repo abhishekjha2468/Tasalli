@@ -6,6 +6,7 @@ numpy==1.19.5
 pandas==1.1.5
 requests==2.23.0
 flask_ngrok
+flask-cors
 werkzeug==2.0.3
 pymysql
 mysql-connector-python
