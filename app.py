@@ -44,7 +44,7 @@ def Landing_page():
 
 @app.route("/home", methods=['GET','POST'])
 def home():
-    return render_template("homepage_expert.html")
+    return "Welcome"#render_template("homepage_expert.html")
 
 # @app.route("/login", methods=['GET'])
 # def loginPage():
