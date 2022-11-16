@@ -33,10 +33,15 @@ def pages_render(section):
 
 @app.route("/", methods=['GET'])
 def Landing_page():
-    f=open("homepage_expert.html","r")
-    text=f.read()
-    f.close()
-    return text
+#     f=open("homepage_expert.html","r")
+#     text=f.read()
+#     f.close()
+    return render_template("homepage_expert.html")
+
+
+@app.route("/home", methods=['GET'])
+def home():
+    return render_template("homepage_expert.html")
 
 # @app.route("/login", methods=['GET'])
 # def loginPage():
