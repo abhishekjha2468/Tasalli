@@ -1,13 +1,13 @@
-markupsafe==2.0.1
+requests
 python-firebase
 git+https://github.com/ozgur/python-firebase
 flask==1.1.4
+flask-cors
 numpy==1.19.5
 pandas==1.1.5
 requests==2.23.0
 flask_ngrok
-flask-cors
-werkzeug
+Werkzeug
 pymysql
 mysql-connector-python
 mysqlclient
