@@ -16,37 +16,41 @@ import os
 import requests
 from firebase import firebase
 import ast
+from flask_cors import CORS
+import json
 
 app = Flask(__name__)
+app._static_folder = os.path.abspath("templates/")
+CORS(app)
 #run_with_ngrok(app) 
 
-@app.route("/home", methods=['GET','POST'])
-def home():
-    f=open("index.html","r")
-    text=f.read()
-    f.close()
-    return text
+@app.route("/<section>", methods=['GET','POST'])
+def pages_render(section):
+#     f=open("section"+".html","r")
+#     text=f.read()
+#     f.close()
+    return render_template(section+".html")
 
 @app.route("/", methods=['GET'])
 def Landing_page():
-    f=open("index.html","r")
+    f=open("homepage_expert.html","r")
     text=f.read()
     f.close()
     return text
 
-@app.route("/login", methods=['GET'])
-def loginPage():
-    f=open("login.html","r")
-    text=f.read()
-    f.close()
-    return text
+# @app.route("/login", methods=['GET'])
+# def loginPage():
+#     f=open("login.html","r")
+#     text=f.read()
+#     f.close()
+#     return text
 
-@app.route("/signup", methods=['GET'])
-def signupPage():
-    f=open("signup.html","r")
-    text=f.read()
-    f.close()
-    return text
+# @app.route("/signup", methods=['GET'])
+# def signupPage():
+#     f=open("signup.html","r")
+#     text=f.read()
+#     f.close()
+#     return text
 
 def saveUserData(name,emailid,phoneNumber,password):
     f=firebase.FirebaseApplication("https://tasallii-default-rtdb.firebaseio.com/",None)
@@ -83,9 +87,9 @@ def checkPassword(emailid,password):
             return False,'Incorrect Password'
         return True,d
 
-@app.route("/dashboard", methods=['GET','POST'])
-def dashboard():
-    return 'Welcome To Dashboard'
+# @app.route("/dashboard", methods=['GET','POST'])
+# def dashboard():
+#     return 'Welcome To Dashboard'
 
 @app.route("/signupSubmit", methods=['GET','POST'])
 def signup_submit():
