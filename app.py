@@ -20,9 +20,9 @@ from flask_cors import CORS
 import json
 
 app = Flask(__name__,static_url_path='', 
-            static_folder='web/static',
-            template_folder='web/templates')
-app.config["DEBUG"] = True
+            static_folder='static',
+            template_folder='templates')
+# app.config["DEBUG"] = True
 # app._static_folder = os.path.abspath("templates/")
 CORS(app)
 #run_with_ngrok(app) 
