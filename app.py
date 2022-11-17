@@ -32,7 +32,10 @@ def pages_render(section):
 #     f=open("section"+".html","r")
 #     text=f.read()
 #     f.close()
-    return render_template(section+".html")
+    try:
+        return render_template(section+".html")
+    except:
+        return f"{section} page is not build"
 
 @app.route("/", methods=['GET','POST'])
 def Landing_page():
