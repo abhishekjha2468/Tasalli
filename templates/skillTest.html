@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+    <script src="js/bootstrap.bundle.min.js"></script>
+ <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Skill Test Page</title>
@@ -58,7 +65,7 @@
     <!--Header/Navbar ended-->
     <!--Card started --> 
     <div class="card" style="margin-top: 5px; margin-left: 3em; margin-right:3em; margin-bottom: 5px;">
-        <h5 class="card-header" style="text-align: center;">Java Assessments</h5>
+        <h5 class="card-header" style="text-align: center;">{{ skillname }} Assessments</h5>
         <div class="card-body" style="padding: 0px;">
 
             <!-- <ul class="list-group list-group-flush">
@@ -117,7 +124,7 @@
         <div id="data-result">
             <div id="data-output">
                 <div class="card-footer" style="text-align: center;"><button type="button" class="btn btn-primary"
-                        onclick='testjson()'>Let's Start</button></div>
+                        onclick="testskill('{{skillname}}')">Let's Start</button></div>
             </div>
         </div>
     </div>
@@ -138,12 +145,15 @@
     <!--footer ended-->
 
     <!--java script started-->
-    <script src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
     <script>
-        function testjson() {
+        function testskill(skill) {
             const request = new XMLHttpRequest();
             // console.log(`Function called`)
-            request.open("GET", "https://cerebry.herokuapp.com/api/skilltest/java");
+            let api = "https://tasalli.herokuapp.com/api/skilltest/"
+            let skilltestApi = api.concat(skill)
+            request.open("GET", skilltestApi);
             request.setRequestHeader('Access-Control-Allow-Origin', 'application/json');
             request.responseType = "json"
             request.send();
@@ -179,7 +189,7 @@
                         console.log(`${i}`)
                         out += `
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">${i + 1}) ${res[i]["Question"]}</li>
+                <li class="list-group-item">${i + 1} ) ${res[i]["Question"]}</li>
                 <li class="list-group-item">
                     <input class="form-check-input" type="radio" name="exampleRadios_${i}"
                         value="${radiovalues[i][0]}" unchecked style="margin-right: 5px;">${res[i]["Options"][0]}</li>
@@ -201,8 +211,11 @@
 
 
                     document.getElementById("data-output").innerHTML = out;
-                    event.preventDefault()
-                    // wait(7000);
+                    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+
+                    if (skill=="Mathematics") {
+                        MathJax.Hub.Queue(['Typeset', MathJax.Hub, 'data-output']);
+                    }
                 }
                 else {
                     console.log(`error ${request.status}`)
@@ -229,14 +242,16 @@
                 }
 
             }
-            var out = `<div style="text-align: center;">Your score is ${l.reduce((a, b) => a + b, 0)}/10</div>`
+            var out = ` <div style="text-align: center;">Your score is ${l.reduce((a, b) => a + b, 0)}/10</div>`
             document.getElementById("data-result").innerHTML = out;
-            event.preventDefault()
+<!--            event.preventDefault()-->
 
         }
 
 
+
     </script>
+
     <!--java script ended-->
 </body>
 
