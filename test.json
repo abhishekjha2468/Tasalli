@@ -688,7 +688,7 @@
 			"CorrectAnswer" : "0"
 		},
 		"3" : {
-			"Question" : "<div class='latex()'>Find the remainder when $ 4x^{3} - 3x^{2} + 2x - 4 $ is divided by $ x + 2 $.</div>",
+			"Question" : "<div class='latex'>Find the remainder when $ 4x^{3} - 3x^{2} + 2x - 4 $ is divided by $ x + 2 $.</div>",
 			"Options" : ["52",
 				"4",
 				"-52",
