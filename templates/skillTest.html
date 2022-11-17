@@ -212,9 +212,10 @@
 
                     document.getElementById("data-output").innerHTML = out;
                     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+                    MathJax.Hub.Queue(['Typeset', MathJax.Hub, 'data-output']);
 
                     if (skill=="Mathematics") {
-                        MathJax.Hub.Queue(['Typeset', MathJax.Hub, 'data-output']);
+
                     }
                 }
                 else {
