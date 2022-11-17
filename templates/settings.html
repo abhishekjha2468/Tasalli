@@ -1,184 +1,281 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Settings</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Settings</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
   <style>
-     .nav-scroller .nav {
-          display: flex;
-          flex-wrap: nowrap;
-          padding-bottom: 1rem;
-          margin-top: -1px;
-          overflow-x: auto;
-          text-align: center;
-          white-space: nowrap;
-          -webkit-overflow-scrolling: touch;
-        }
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
   </style>
-  </head>
+</head>
 
-  <body>
-    <!--Svg elements started -->
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-      <symbol id ="bank"  fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
-          <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z"></path>
-        </symbol>
-        <symbol id="bootstrap" viewBox="0 0 118 94">
-          <title>Bootstrap</title>
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
-          </path>
-        </symbol>
-      </svg>
-      <!--Svg elements ended-->
-    <!--Header/Navbar started-->
-   <nav class="py-2 bg-light border-bottom">
-        <div class="container d-flex flex-wrap" style="max-width: 100%;">
-            <ul class="nav me-auto">
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">About</a></li>
-            </ul>
-            <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Login</a></li>
-                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Sign up</a></li>
-                
-            </ul>
-        </div>
-    </nav>
-    <header class="border-bottom">
-      <div class="container d-flex flex-wrap justify-content-center" style="max-width: 100%; padding-top: 0.5rem; padding-bottom: 0.5rem;"> 
-            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32">
-                    <use xlink:href="#bank" />
-                </svg>
-                <span class="fs-4">Tasallii</span>
-            </a>
-        </div>
-    </header>
-     <!--Header/Navbar ended-->
+<body>
+  <!--Svg elements started -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="bank" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
+      <path
+        d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z">
+      </path>
+    </symbol>
+    <symbol id="bootstrap" viewBox="0 0 118 94">
+      <title>Bootstrap</title>
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+      </path>
+    </symbol>
+  <symbol id="profile" viewBox="0 0 16 16">
+    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+</symbol>
+<symbol id="emailid" viewBox="0 0 16 16">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+</symbol>
+<symbol id="phone" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+</symbol>
 
-     <div style="margin-left: 1em;margin-right: 1em;">
-     <h2>General Settings</h2>
-     <br>
+<symbol id="sheild" viewBox="0 0 16 16">
+  <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+  <path d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415z"/>
+</symbol>
+<symbol id="activeprof" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+  <path d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"/>
+</symbol>
+  </svg>
+  <!--Svg elements ended-->
+  <!--Header/Navbar started-->
+  <nav class="py-2 bg-light border-bottom">
+    <div class="container d-flex flex-wrap" style="max-width: 100%;">
+      <ul class="nav me-auto">
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Contact Us</a></li>
+      </ul>
+      <ul class="nav">
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Dashboard</a></li>
+        <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Log Out</a></li>
 
-     <div class="container" style="margin: 0px;">
-      <div class="row" style="width: fit-content;"> 
-        <div class="col">
-          <svg class="bi me-2" width="40" height="32">
-            <use xlink:href="#bank" />
+      </ul>
+    </div>
+  </nav>
+  <header class="border-bottom">
+    <div class="container d-flex flex-wrap justify-content-center"
+      style="max-width: 100%; padding-top: 0.5rem; padding-bottom: 0.5rem;">
+      <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bank" />
         </svg>
+        <span class="fs-4">Tasallii</span>
+      </a>
+    </div>
+  </header>
+  <!--Header/Navbar ended-->
+ <div style="margin: 3em;">
+  <div>
+    <h2>General Settings</h2>
+    <br>
+
+    <div class="container" style="max-width:unset">
+      <div class="row" style="margin-bottom: 13px;">
+        <div class="col-md-auto">
+          <svg class="bi me-2" width="40" height="40">
+            <use xlink:href="#profile" />
+          </svg>
         </div>
         <div class="col">
           <h5>Profile Live</h5>
-          <p> you delete your profile, you will lose your data permanently.</p>
-          <button type="submit" class="btn btn-primary">Change Email</button>
+          <p> You delete your profile, you will lose your data permanently.</p>
+          <button type="submit" class="btn btn-primary">Delete Profile</button>
         </div>
       </div>
-      <div class="row" style="width: fit-content;"> 
-        <div class="col">
-          <svg class="bi me-2" width="40" height="32">
-            <use xlink:href="#bank" />
-        </svg>
+      <hr>
+      <div class="row" style="margin-bottom: 13px;">
+        <div class="col-md-auto">
+          <svg class="bi me-2" width="40" height="40">
+            <use xlink:href="#emailid" />
+          </svg>
         </div>
         <div class="col">
           <h5>Email</h5>
-          <p>Your email is pankajgoyelpg0786@gmail.com</p>
+          <p>Your email is testing@gmail.com</p>
+
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" style="width: 20em; margin-bottom: 10px;">
+
           <button type="submit" class="btn btn-primary">Change Email</button>
         </div>
+
       </div>
-    </div>
-<div class="mb-3">
-  <h5>Profile Live</h5>
-  <div id="profileHelp" class="form-text">If you delete your profile, you will lose your data permanently.</div>
-  <button type="submit" class="btn btn-primary">Delete profile</button>
-</div>
-<div class="mb-3">
-  <h5>Email</h5>
-  <div id="emailHelp" class="form-text">Your email is pankajgoyelpg0786@gmail.com</div>
-  <button type="submit" class="btn btn-primary">Change Email</button>
-</div>
-<div class="mb-3">
-  <h5>Phone</h5>
-  <div id="phoneHelp" class="form-text">Add, remove and verify phone numbers</div>
-  <button type="submit" class="btn btn-primary">Manage phone numbers</button>
-</div>
-<div class="mb-3">
-  <h5>Name</h5>
-  <div id="nameHelp" class="form-text">Manage how others see your name</div>
-<button type="submit" class="btn btn-primary">Manage name</button>
-</div>
-<div class="mb-3">
-  <h5>Profile photo</h5>
-  <div id="profilePhotoHelp" class="form-text">Manage your profile picture</div>
-<button type="submit" class="btn btn-primary">Manage profile photo</button>
-</div>
+      <hr>
+      <div class="row" style="margin-bottom: 13px;">
+        <div class="col-md-auto">
+          <svg class="bi me-2" width="40" height="40">
+            <use xlink:href="#phone" />
+          </svg>
+        </div>
+        <div class="col">
+          <h5>Phone</h5>
+          <p>Add, remove and verify phone numbers</p>
+          <input type="tel" class="form-control" id="exampleFormControlInput1"  style="width: 20em; margin-bottom: 10px;">
+          <button type="submit" class="btn btn-primary">Manage Phone number</button>
+        </div>
 
-<br>
-<h2>Student account settings</h2>
-     <br>
-
-<div class="mb-3">
-  <h5>Post visibility</h5>
-  <div id="postVisibilityHelp" class="form-text">Select how your posts are made public</div>
-  <select id="alwaysMakePublic" class="form-select">
-    <option>Always make public</option>
-    <option>Never make public</option>
-  </select>
-</div>
-
-<br>
-<h2>Tutor account settings</h2>
-     <br>
-
-     <div class="mb-3">
-      <h5>Manage Show Contact Settings</h5>
-      <div id="manageShowContactSettings" class="form-text">Options to see how your contact details are shown to students.</div>
-      <button type="submit" class="btn btn-primary">Show Contact Settings</button>
-    </div>
-    <div class="mb-3">
-      <h5>Payment receiving settings</h5>
-      <div id="paymentReceivingSettings" class="form-text">Manage accounts in which you receive payment when a student pays you.</div>
-      <button type="submit" class="btn btn-primary">Accounts for getting paid</button>
-    </div>
-    <div class="mb-3">
-      <h5>Search Engine visibility</h5>
-      <div id="searchEngineVisibility" class="form-text">Your profile can be seen by Google and other search engines (recommended)</div>
-      <button type="submit" class="btn btn-primary">Hide profile from Google (not recommended)</button>
-    </div>
-    <div class="mb-3">
-      <h5>Profile Active</h5>
-      <div id="profileActive" class="form-text">Deactivate your profile if you wish to take a temporary break from teaching.</div>
-      <div id="profileActive" class="form-text">If you deactivate profile students will not be able to contact you until you activate it again.</div>
-    
-      <button type="submit" class="btn btn-primary">Deactivate profile</button>
-    </div>
-    <div class="mb-3">
-      <h5>Email preferences</h5>
-  </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Get Job notifications</label>
-        <br>
-        <input type="checkbox" class="form-check-input" id="exampleCheck2">
-        <label class="form-check-label" for="exampleCheck2">Get notifications of local students around me</label>
       </div>
-      
+      <hr>
+      <div class="row" style="margin-bottom: 13px;">
+        <div class="col-md-auto">
+          <svg class="bi me-2" width="50" height="50">
+            <use xlink:href="#sheild" />
+          </svg>
+        </div>
+        <div class="col">
+          <h5>Password</h5>
+          <p>Change your password</p>
+          <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Current Password" style="width: 20em; margin-bottom: 10px;">
+          <input type="tel" class="form-control" id="exampleFormControlInput1"  placeholder="New Password"  style="width: 20em; margin-bottom: 10px;">
+          <input type="tel" class="form-control" id="exampleFormControlInput1"    placeholder="Confirm New Password" style="width: 20em; margin-bottom: 10px;">
+          <button type="submit" class="btn btn-primary">Update Password</button>
+        </div>
+
+      </div>
+      <hr>
+      <!-- <div class="row" style="margin-bottom: 13px;">
+        <div class="col-md-auto">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bank" />
+          </svg>
+        </div>
+        <div class="col">
+          <h5>Profile photo</h5>
+          <p>Manage your profile picture</p>
+
+          <button type="submit" class="btn btn-primary">Manage profile photo</button>
+        </div>
+
+
+      </div> -->
+
     </div>
 
-   <!--footer started-->
-   <footer class="d-flex flex-wrap justify-content-between align-items-center  border-top" style="padding-top: 0.5em; padding-bottom: 0.5em">
-    <div class="col-md-4 d-flex align-items-center" style="padding-top: 0.1em; padding-left: 1.1em; padding-bottom: 0.1em;">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-        <svg class="bi" width="30" height="24">
-          <use xlink:href="#bootstrap" />
-        </svg>
-      </a>
-      <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
-    </div>
-  </footer>
-    <!--footer ended-->
-    <script src="js/bootstrap.bundle.min.js"></script>
-  </body>
+
+
+
+      <br>
+      <!-- <h2>Learner account settings</h2>
+      <br> -->
+
+      <!-- <div class="mb-3">
+        <h5>Post visibility</h5>
+        <div id="postVisibilityHelp" class="form-text">Select how your posts are made public</div>
+        <select id="alwaysMakePublic" class="form-select" style="width: 14em;">
+          <option>Always make public</option>
+          <option>Never make public</option>
+        </select>
+      </div> -->
+
+      <br>
+      <h2>Expert account settings</h2>
+      <br>
+      <div class="container" style="margin: 0px;">
+        <!-- <div class="row" style="margin-bottom: 13px;">
+          <div class="col-md-auto">
+            <svg class="bi me-2" width="40" height="32">
+              <use xlink:href="#bank" />
+            </svg>
+          </div>
+          <div class="col">
+            <h5>Manage Show Contact Settings</h5>
+            <p> Options to see how your contact details are shown to students.</p>
+            <button type="submit" class="btn btn-primary">Show Contact Settings</button>
+          </div>
+          </div>
+
+          <hr>
+
+          <div class="row" style="margin-bottom: 13px;">
+            <div class="col-md-auto">
+              <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bank" />
+              </svg>
+            </div>
+            <div class="col">
+              <h5>Payment receiving settings</h5>
+              <p> Manage accounts in which you receive payment when a student pays you.</p>
+              <button type="submit" class="btn btn-primary">Accounts for getting paid</button>
+            </div>
+          </div>
+          <hr>
+            <div class="row" style="margin-bottom: 13px;">
+              <div class="col-md-auto">
+                <svg class="bi me-2" width="40" height="32">
+                  <use xlink:href="#bank" />
+                </svg>
+              </div>
+              <div class="col">
+                <h5>Search Engine visibility</h5>
+                <p> Manage accounts in which you receive payment when a student pays you.</p>
+                <button type="submit" class="btn btn-primary">Hide profile from Google (not recommended)</button>
+              </div>
+            </div>
+            <hr>-->
+              <div class="row" style="margin-bottom: 13px;">
+                <div class="col-md-auto">
+                  <svg class="bi me-2" width="50" height="50">
+                    <use xlink:href="#activeprof" />
+                  </svg>
+                </div>
+                <div class="col">
+                  <h5>Profile Active</h5>
+                  <p> Manage your profile state.</p>
+                  <button type="submit" class="btn btn-primary">Deactivate profile</button>
+                </div>
+              </div>
+              <hr>
+
+            </div>
+
+
+
+
+              <div class="mb-3">
+                <h5>Email preferences</h5>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Get Job notifications.</label>
+                <br>
+                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                <label class="form-check-label" for="exampleCheck2">Get notifications of new courses available.</label>
+              </div>
+
+            </div>
+            </div>
+
+            <!--footer started-->
+            <footer class="d-flex flex-wrap justify-content-between align-items-center  border-top"
+              style="padding-top: 0.5em; padding-bottom: 0.5em">
+              <div class="col-md-4 d-flex align-items-center"
+                style="padding-top: 0.1em; padding-left: 1.1em; padding-bottom: 0.1em;">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                  <svg class="bi" width="30" height="24">
+                    <use xlink:href="#bootstrap" />
+                  </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+              </div>
+            </footer>
+            <!--footer ended-->
+            <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
