@@ -65,7 +65,7 @@
     <!--Header/Navbar ended-->
     <!--Card started --> 
     <div class="card" style="margin-top: 5px; margin-left: 3em; margin-right:3em; margin-bottom: 5px;">
-        <h5 class="card-header" style="text-align: center;">{{ skillname }} Assessments</h5>
+        <h5 class="card-header" style="text-align: center;">{{ skillname }} Assessments with $x^{10}$ Questions</h5>
         <div class="card-body" style="padding: 0px;">
 
             <!-- <ul class="list-group list-group-flush">
@@ -189,7 +189,7 @@
                         console.log(`${i}`)
                         out += `
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">${i + 1} ) ${res[i]["Question"]}</li>
+                <li class="list-group-item"><div class='latex'>${i + 1} ) ${res[i]["Question"]}</>div></li>
                 <li class="list-group-item">
                     <input class="form-check-input" type="radio" name="exampleRadios_${i}"
                         value="${radiovalues[i][0]}" unchecked style="margin-right: 5px;">${res[i]["Options"][0]}</li>
