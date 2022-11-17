@@ -7,6 +7,9 @@
  <script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
 </script>
+    <script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
 <script type="text/javascript"
   src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
@@ -23,6 +26,7 @@
 
 <body>
     <!--Svg elements started -->
+
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="bank" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16">
             <path
@@ -66,7 +70,7 @@
     <!--Header/Navbar ended-->
     <!--Card started --> 
     <div class="card" style="margin-top: 5px; margin-left: 3em; margin-right:3em; margin-bottom: 5px;">
-        <h5 class="card-header" style="text-align: center;">{{ skillname }} Assessments</h5>
+        <h5 class="card-header" style="text-align: center;">{{skillname}} Assessments</h5>
         <div class="card-body" style="padding: 0px;">
 
             <!-- <ul class="list-group list-group-flush">
@@ -122,12 +126,14 @@
 
             </ul> -->
         </div>
+
         <div id="data-result">
             <div id="data-output">
                 <div class="card-footer" style="text-align: center;"><button type="button" class="btn btn-primary"
                         onclick="testskill('{{skillname}}')">Let's Start</button></div>
             </div>
         </div>
+
     </div>
     <!--Card ended -->
 
@@ -244,8 +250,16 @@
                 }
 
             }
+            var score = l.reduce((a, b) => a + b, 0);
+            if (score > 6) {
+             document.getElementById("data-result").innerHTML = `<center><canvas id="myChart" style="width:80%;max-width:500px;"></canvas><br><h3>Pass</h3></center>`;
+             }
+             else {
+             document.getElementById("data-result").innerHTML = `<center><canvas id="myChart" style="width:80%;max-width:500px;"></canvas><br><h3>Fail</h3></center>`;
+             }
             var out = ` <div style="text-align: center;">Your score is ${l.reduce((a, b) => a + b, 0)}/10</div>`
-            document.getElementById("data-result").innerHTML = out;
+<!--            document.getElementById("data-result").innerHTML = out;-->
+                plot_result(l.reduce((a, b) => a + b, 0));
 <!--            event.preventDefault()-->
 
         }
@@ -253,6 +267,34 @@
 
 
     </script>
+    <script>
+    function plot_result(n){
+
+      var xValues = ["Correct","Incorrect"];
+      var yValues = [n,10-n];
+      var barColors = [
+        "#3385ff",
+        "#ffa31a"
+      ];
+
+      new Chart("myChart", {
+        type: "pie",
+        data: {
+          labels: xValues,
+          datasets: [{
+            backgroundColor: barColors,
+            data: yValues,
+            hoverBackgroundColor: ["blue","#ff8000"]
+          }]
+        },
+        options: {
+          title: {
+            display: true,
+            text: "Score"
+          }
+        }
+      });}
+      </script>
 
     <!--java script ended-->
 </body>
