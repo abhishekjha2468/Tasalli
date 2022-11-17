@@ -1,0 +1,915 @@
+{
+	
+	"Java" : {
+		"1" : {
+			"Question" : "What is displayed when this code is compiled and executed?<br>Public class main {<br>public static void main(string[] args) {<br>int x= 5;x = 10;System.out.println(x);  <br>}<br>}",
+			"Options" : ["5",
+				"null",
+				"x",
+				"10"],
+			"CorrectAnswer" : "3"
+		},
+		"2" : {
+			"Question" : "What statement returns true if “nifty” is of type String?",
+			"Options" : ["“nifty”.getType().equals(“string”)",
+				"nifty”.getClass().getSimpleName() == “String”",
+				"“nifty” instantceof String",
+				"“nifty” .getType() == String"],
+			"CorrectAnswer" : "2"
+		},
+		"3" : {
+			"Question" : "Given the string “strawberries” saved in a variable called fruit, what would fruit .substring(2, 5) return?",
+			"Options" : ["raw",
+				"rawb",
+				"traw",
+				"awb"],
+			"CorrectAnswer" : "0"
+		},
+		"4" : {
+			"Question" : "What is the result of this code?<br>try{  System.out.print(“Hello World”);}catch(Exception e) {<br>  System.out.println(“e”);}catch(ArithmeticException e)<br> { System.out.println(“e”);}finalyy{ System.out.println(“!”);}",
+			"Options" : ["It will not compile because the second catch statement is unreachable.",
+				"Hello World",
+				"Hellow World!",
+				"It will thwow a runtime exception."],
+			"CorrectAnswer" : "0"
+		},
+		"5" : {
+			"Question" : "How many times will this code print “Hello World”?<br>class Main{ public static void main(String[] args) {<br>   for (int i=0; i<10; i=i++){    i+=1;    System.out.println(“Hello World!”);   }  }}",
+			"Options" : ["9 times",
+				"infinite number of times",
+				"5 times",
+				"10 times"],
+			"CorrectAnswer" : "0"
+		},
+		"6" : {
+			"Question" : "What is the result of this code?<br>class Main { Object message(){ return “Hello!”;<br> } public static void main(String[] args) { System.out.print(newmain().MESSAGE()); System.out.print(new Main2().message()); }}class Main2 extends Main { String message(){ return “World!”;  }}",
+			"Options" : ["It will compile because of line 7.",
+				"Hello!Hello!",
+				"Hello!World!",
+				"It will not compile because of line 11."],
+			"CorrectAnswer" : "2"
+		},
+		"7" : {
+			"Question" : "You have an ArrayList of names that you want to sort alphabetically. Which approach would not work?",
+			"Options" : ["names.sort(Comparator.comparing(String::toString))",
+				"names = names.stream().sorted((s1, s2) -> s1.compareTo(s2)).collect(Collectors.toList())",
+				"names.sort(List.DECENDING)",
+				"Collections.sort(names)"],
+			"CorrectAnswer" : "2"
+		},
+		"8" : {
+			"Question" : "What is the output of this code?<br>import java.util.*;<br>class Main {<br>  public static void main(String[] args) {  List<Boolean> list = new ArrayList<>();<br>  list.add(true);<br>  list.add(Boolean.parseBoolean(“False”));<br>  list.add(Boolean.TRUE);<br>  System.out.print(list.size());<br>  System.out.print(list.get(1) instanceof Boolean);<br>  }}",
+			"Options" : ["3false",
+				"3true",
+				"2true",
+				"A runtime exception is thrown"],
+			"CorrectAnswer" : "2"
+		},
+		"9" : {
+			"Question" : "What method can be used to create a new instance of an object?",
+			"Options" : ["another instance",
+				"field",
+				"private method",
+				"constructor"],
+			"CorrectAnswer" : "3"
+		},
+		"10" : {
+			"Question" : "How can you achieve runtime polymorphism in Java?",
+			"Options" : ["method calling",
+				"method overrunning",
+				"method overriding",
+				"method overloading"],
+			"CorrectAnswer" : "3"
+		},
+		"11" : {
+			"Question" : "What is the output of this code?<br>class Main { public static void main(String[] args) {<br> String message = “Hello wold!”;<br> String newMessage = message.substring(6, 12) + message.substring(12, 6);<br> System.out.println(newMessage);<br> }}",
+			"Options" : ["The code does not compile",
+				"A runtime exception is thrown",
+				"world!world!",
+				"world!!world"],
+			"CorrectAnswer" : "1"
+		},
+		"12" : {
+			"Question" : "Which is the most reliable expression for testing whether the values of two string variables are the same?",
+			"Options" : ["string1 == string2",
+				"string1.equals(string2)",
+				"string1 = string2",
+				"string1.matches(string2)"],
+			"CorrectAnswer" : "1"
+		},
+		"13" : {
+			"Question" : "What is the output of this code?<br>class Main {<br>  static int cound = 0;<br>  public static void main(String[] args)  {<br>if(cound <3)<br>{count++;main(null);}<br>else{  return;<br>   }   System.out.println(“Hello World”);<br>  }}",
+			"Options" : ["it will throw a runtime exception.",
+				"it will print “Hello World!” three times.",
+				"it will not compile.",
+				"it will run forever."],
+			"CorrectAnswer" : "3"
+		},
+		"14" : {
+			"Question" : "What is the output of this code?<br>class main {<br>  public static void main(String[] args) {<br>   List list = new ArrayList();   list.add(“hello”);<br>   list.add(2);<br>   System.out.print(list.get(0) instanceof Object);<br>   System.out.print(list.get(1) instanceof Integer);<br>  }}",
+			"Options" : ["falsetrue",
+				"The code does not compile.",
+				"truetrue",
+				"truefalse"],
+			"CorrectAnswer" : "2"
+		},
+		"15" : {
+			"Question" : "By implementing encapsulation, you cannot directly access the class’s _____ properties unless you are writing code inside the class itself.",
+			"Options" : ["private",
+				"protected",
+				"public",
+				"no-modifier"],
+			"CorrectAnswer" : "0"
+		}
+	},
+
+	"MachineLearning": {
+		"1": {
+			"Question": "You are part of a data science team that is working for a national fast-food chain. You create a simple report that shows trend: Customers who visit the store more often and buy smaller meals spend more than customers who visit less frequently and buy larger meals. What is the most likely diagram that your team created?",
+			"Options": ["multiclass classification diagram",
+				"linear regression and scatter plots",
+				"pivot table",
+				"K-means cluster diagram"
+			],
+			"CorrectAnswer": "1"
+		},
+		"2": {
+			"Question": "You work for an organization that sells a spam filtering service to large companies. Your organization wants to transition its product to use machine learning. It currently a list Of 250,00 keywords. If a message contains more than few of these keywords, then it is identified as spam. What would be one advantage of transitioning to machine learning?",
+			"Options": ["The product would look for new patterns in spam messages.",
+				"The product could go through the keyword list much more quickly.",
+				"The product could have a much longer keyword list.",
+				" The product could find spam messages using far fewer keywords."
+			],
+			"CorrectAnswer": "3"
+		},
+		"3": {
+			"Question": "In traditional computer programming, you input commands. What do you input with machine learning?",
+			"Options": ["patterns",
+				"programs",
+				"rules",
+				"data"
+			],
+			"CorrectAnswer": "3"
+		},
+		"4": {
+			"Question": "You work in a data science team that wants to improve the accuracy of its K-nearest neighbor result by running on top of a naive Bayes result. What is this an example of?",
+			"Options": ["regression",
+				"stacking",
+				" boosting",
+				"bagging"
+			],
+			"CorrectAnswer": "1"
+		},
+		"5": {
+			"Question": "_____________ looks at the relationship between predictors and your outcome.",
+			"Options": ["Regression analysis",
+				"Big data",
+				"K-means clustering",
+				" Unsupervised learning"
+			],
+			"CorrectAnswer": "0"
+		},
+		"6": {
+			"Question": "What is an example of a commercial application for a machine learning system?",
+			"Options": [" a data warehouse system",
+				" a massive data repository",
+				"a product recommendation system",
+				"a data entry system"
+			],
+			"CorrectAnswer": "2"
+		},
+		"7": {
+			"Question": "To predict a quantity value use _____________.",
+			"Options": ["regression",
+				" classification",
+				"dimensionality reduction",
+				"clustering"
+			],
+			"CorrectAnswer": "0"
+		},
+		"8": {
+			"Question": "Why is naive Bayes called naive?",
+			"Options": ["It does not even try to create accurate predictions.",
+				"It naively assumes that all the predictors depend on one another.",
+				"It naively assumes that the predictors are independent from one another.",
+				"It naively assumes that you will have no data."
+			],
+			"CorrectAnswer": "2"
+		},
+		"9": {
+			"Question": "What is stacking?",
+			"Options": ["You use several machine learning algorithms to boost your results.",
+				"You stack your training set and testing set together.",
+				"You use different versions of machine learning algorithms.",
+				"The predictions of one model become the inputs another."
+			],
+			"CorrectAnswer": "3"
+		},
+		"10": {
+			"Question": "Random forest is modified and improved version of which earlier technique?",
+			"Options": ["aggregated trees",
+				"boosted trees",
+				"bagged trees",
+				"stacked trees"
+			],
+			"CorrectAnswer": "2"
+		},
+		"11": {
+			"Question": "Self-organizing maps are specialized neural network for which type of machine learning?",
+			"Options": ["semi-supervised learning",
+				"supervised learning",
+				"reinforcement learning",
+				"unsupervised learning"
+			],
+			"CorrectAnswer": "0"
+		},
+		"12": {
+			"Question": " Which statement about K-means clustering is true?",
+			"Options": ["In K-means clustering, the initial centroids are sometimes randomly selected.",
+				"K-means clustering is often used in supervised machine learning.",
+				"The number of clusters are always randomly selected.",
+				"To be accurate, you want your centroids outside of the cluster."
+			],
+			"CorrectAnswer": "0"
+		},
+		"13": {
+			"Question": " Which choice is best for binary classification?",
+			"Options": ["K-means",
+				"Logistic regression",
+				"Linear regression",
+				"Principal Component Analysis (PCA)"
+			],
+			"CorrectAnswer": "1"
+		},
+		"14": {
+			"Question": "Many of the advances in machine learning have come from improved ___.",
+			"Options": ["statistics",
+				"structured data",
+				"availability",
+				"algorithms"
+			],
+			"CorrectAnswer": "3"
+		},
+		"15": {
+			"Question": "The model will be trained with data in one single batch is known as ?",
+			"Options": ["Batch learning",
+				"Offline learning",
+				"Both A and B",
+				" None of the above"
+			],
+			"CorrectAnswer": "2"
+		},
+		"16": {
+			"Question": "The error function most suited for gradient descent using logistic regression is",
+			"Options": ["The entropy function.",
+				"The squared error.",
+				"The cross-entropy function.",
+				"The number of mistakes."
+			],
+			"CorrectAnswer": "2"
+		},
+		"17": {
+			"Question": "_____________ refers to a model that can neither model the training data nor generalize to new data.",
+			"Options": ["good fitting",
+				"overfitting",
+				"underfitting",
+				"all of the above"
+			],
+			"CorrectAnswer": "2"
+		},
+		"18": {
+			"Question": "Which of the following methods can use either as an unsupervised learning or as a dimensionality reduction technique?",
+			"Options": ["SVM",
+				"PCA",
+				" LDA",
+				"TSNE"
+			],
+			"CorrectAnswer": "1"
+		},
+		"19": {
+			"Question": "Which loss function would fit best in a categorical (discrete) supervised learning ?",
+			"Options": ["kullback-leibler (KL) loss",
+				"Binary Crossentropy",
+				"Mean Squared Error (MSE)",
+				"Any L2 loss"
+			],
+			"CorrectAnswer": "1"
+		},
+		"20": {
+			"Question": "Which choice is the best example of labeled data?",
+			"Options": ["a spreadsheet",
+				"20,000 recorded voicemail messages",
+				"100,000 images of automobiles",
+				"hundreds of gigabytes of audio files"
+			],
+			"CorrectAnswer": "0"
+		},
+		"21": {
+			"Question": "What is lazy learning?",
+			"Options": ["when the machine learning algorithms do most of the programming",
+				"when you don't do any data scrubbing",
+				"when the learning happens continuously",
+				"when you run your computation in one big instance at the beginning"
+			],
+			"CorrectAnswer": "2"
+		},
+		"22": {
+			"Question": "What is Q-learning reinforcement learning?",
+			"Options": ["supervised machine learning with rewards",
+				"a type of unsupervised learning that relies heavily on a well-established model",
+				"a type of reinforcement learning where accuracy degrades over time",
+				"a type of reinforcement learning that focuses on rewards"
+			],
+			"CorrectAnswer": "3"
+		},
+		"23": {
+			"Question": " What is one of the most effective way to correct for underfitting your model to the data?",
+			"Options": ["Create training clusters",
+				"Remove predictors",
+				"Use reinforcement learning",
+				"Add more predictors"
+			],
+			"CorrectAnswer": "3"
+		},
+		"24": {
+			"Question": "What is the difference between unstructured and structured data?",
+			"Options": ["Unstructured data is always text.",
+				"Unstructured data is much easier to store.",
+				"Structured data has clearly defined data types.",
+				"Sturctured data is much more popular."
+			],
+			"CorrectAnswer": "2"
+		},
+		"25": {
+			"Question": "K-means clustering is what type of machine learning algorithm?",
+			"Options": ["reinforcement",
+				"supervised",
+				"unsupervised",
+				"classification"
+			],
+			"CorrectAnswer": "2"
+		},
+		"26": {
+			"Question": "When is a decision tree most commonly used?",
+			"Options": ["with big data products",
+				"for supervised machine learning binary classification challenges",
+				"to find thd best data cluster",
+				"to determine 'Q' in Q-learning reinforcement le,arning"
+			],
+			"CorrectAnswer": "1"
+		},
+		"27": {
+			"Question": "Averaging the output of multiple decision trees helps to:",
+			"Options": ["Increase variance",
+				"Increase bias",
+				"Decrease variance",
+				"Decrease bias"
+			],
+			"CorrectAnswer": "2"
+		},
+		"28": {
+			"Question": "You want to create a machine learning algorithm that finds the top 100 people who have shared photographs of themselves on social media. What is the best machine learning method to use?",
+			"Options": ["reinforcement learning",
+				"binary classification",
+				"K-nearest neighbor",
+				"unsupervised learning"
+			],
+			"CorrectAnswer": "1"
+		},
+		"29": {
+			"Question": "Fill in the blanks: Two multivariate imputer techniques are the _______________ imputer and the _______________ imputer.",
+			"Options": ["supervised, unsupervised",
+				"iterative, KNN",
+				"similarity, regressive",
+				"normalized, scaled"
+			],
+			"CorrectAnswer": "1"
+		},
+		"30": {
+			"Question": "What is the goal of regularization in the K nearest neighbors algorithm?",
+			"Options": ["normalizing the data points so they can be compared with each other",
+				"using a straight line model to make predictions based on training data",
+				"finding the slope of the line that represents the model",
+				"making the decision boundaries more regular"
+			],
+			"CorrectAnswer": "3"
+		}
+
+	},
+
+	"Python": {
+		"1": {
+			"Question": "What is an abstract class?",
+			"Options": ["An abstract class is the name for any class from which you can instantiate an object.",
+				"Abstract classes must be redefined any time an object is instantiated from them.",
+				"Abstract classes must inherit from concrete classes.",
+				"An abstract class exists only so that other “concrete” classes can inherit from the abstract class."
+			],
+			"CorrectAnswer": "3"
+		},
+		"2": {
+			"Question": "What is the term to describe this code? <br> <mk>count, fruit, price = (2, 'apple', 3.5)</mk>",
+			"Options": ["tuple assignment",
+				"tuple unpacking",
+				"tuple matching",
+				"tuple duplication"
+			],
+			"CorrectAnswer": "1"
+		},
+		"3": {
+			"Question": "What built-in list method would you use to remove items from a list?",
+			"Options": ["<mk>.delete()</mk> method",
+				"<mk>pop(my_list)</mk>",
+				"<mk>del(my_list)</mk>",
+				"<mk>.pop()</mk> method"
+			],
+			"CorrectAnswer": "3"
+		},
+		"4": {
+			"Question": "What is the runtime of accessing a value in a dictionary by using its key?",
+			"Options": ["O(n), also called linear time.",
+				"O(log n), also called logarithmic time.",
+				"O(n^2), also called quadratic time.",
+				"O(1), also called constant time."
+			],
+			"CorrectAnswer": "3"
+		},
+		"5": {
+			"Question": "What built-in Python data type is commonly used to represent a stack?",
+			"Options": ["<mk>set</mk>",
+				"<mk>list</mk>",
+				"<mk>dictionary</mk>",
+				"<mk>You can only build a stack from scratch.</mk>"
+			],
+			"CorrectAnswer": "1"
+		},
+		"6": {
+			"Question": "What would this expression return? <br> <mk> college_years = ['Freshman', 'Sophomore', 'Junior', 'Senior'] <br> return list(enumerate(college_years, 2019))</mk>",
+			"Options": ["<mk>[('Freshman', 2019), ('Sophomore', 2020), ('Junior', 2021), ('Senior', 2022)]</mk>",
+				"<mk>[(2019, 2020, 2021, 2022), ('Freshman', 'Sophomore', 'Junior', 'Senior')]</mk>",
+				"<mk>[('Freshman', 'Sophomore', 'Junior', 'Senior'), (2019, 2020, 2021, 2022)]</mk>",
+				"<mk>[(2019, 'Freshman'), (2020, 'Sophomore'), (2021, 'Junior'), (2022, 'Senior')]</mk>"
+			],
+			"CorrectAnswer": "3"
+		},
+		"7": {
+			"Question": "What is the purpose of an if/else statement?",
+			"Options": ["It tells the computer which chunk of code to run if the instructions you coded are incorrect.",
+				"It runs one chunk of code if all the imports were successful, and another chunk of code if the imports were not successful.",
+				"It executes one chunk of code if a condition is true, but a different chunk of code if the condition is false.",
+				"It tells the computer which chunk of code to run if the is enough memory to handle it, and which chunk of code to run if there is not enough memory to handle it."
+			],
+			"CorrectAnswer": "2"
+		},
+		"8": {
+			"Question": "What is the term used to describe items that may be passed into a function?",
+			"Options": ["arguments",
+				"paradigms",
+				"attributes",
+				"decorators"
+			],
+			"CorrectAnswer": "0"
+		},
+		"9": {
+			"Question": "Which collection type is used to associate values with unique keys?",
+			"Options": ["<mk>slot</mk>",
+				"<mk>dictionary</mk>",
+				"<mk>queue</mk>",
+				"<mk>sorted list</mk>"
+			],
+			"CorrectAnswer": "1"
+		},
+		"10": {
+			"Question": "When does a for loop stop iterating?",
+			"Options": ["when it encounters an infinite loop",
+				"when it encounters an if/else statement that contains a break keyword",
+				"when it has assessed each item in the iterable it is working on or a break keyword is encountered",
+				"when the runtime for the loop exceeds O(n^2)"
+			],
+			"CorrectAnswer": "2"
+		},
+		"11": {
+			"Question": "Assuming the node is in a singly linked list, what is the runtime complexity of searching for a specific node within a singly linked list?",
+			"Options": ["The runtime is O(n) because in the worst case, the node you are searching for is the last node, and every node in the linked list must be visited.",
+				"The runtime is O(nk), with n representing the number of nodes and k representing the amount of time it takes to access each node in memory.",
+				"The runtime cannot be determined unless you know how many nodes are in the singly linked list.",
+				"The runtime is O(1) because you can index directly to a node in a singly linked list."
+			],
+			"CorrectAnswer": "0"
+		},
+		"12": {
+			"Question": "What is key difference between a <mk>set</mk> and a <mk>list</mk>?",
+			"Options": ["A set is an ordered collection unique items. A list is an unordered collection of non-unique items.",
+				"Elements can be retrieved from a list but they cannot be retrieved from a set.",
+				"A set is an ordered collection of non-unique items. A list is an unordered collection of unique items.",
+				"A set is an unordered collection unique items. A list is an ordered collection of non-unique items."
+			],
+			"CorrectAnswer": "3"
+		},
+		"13": {
+			"Question": "What does this function print? <br><mk>def print_alpha_nums(abc_list, num_list):<br>    for char in abc_list:<br>        for num in num_list:<br>            print(char, num)<br>    return<br><br>print_alpha_nums(['a', 'b', 'c'], [1, 2, 3])</mk>",
+			"Options": ["<mk>a 1 <br>a 2 <br>a 3 <br>b 1 <br>b 2 <br>b 3 <br>c 1 <br>c 2 <br>c 3 </mk>",
+				"<mk>['a', 'b', 'c'], [1, 2, 3]</mk>",
+				"<mk>aaa<br>bbb<br>ccc<br>111<br>222<br>333</mk>",
+				"<mk>a 1 2 3 <br>b 1 2 3 <br>c 1 2 3</mk>"
+			],
+			"CorrectAnswer": "0"
+		},
+		"14": {
+			"Question": "What symbol(s) do you use to assess equality between two elements?",
+			"Options": ["<mk>&&</mk>",
+				"<mk>=</mk>",
+				"<mk>==</mk>",
+				"<mk>||</mk>"
+			],
+			"CorrectAnswer": "2"
+		},
+		"15": {
+			"Question": "Review the code below. What is the correct syntax for changing the price to 1.5? <br> <mk>fruit_info = {'fruit': 'apple','count': 2,'price': 3.5}</mk>",
+			"Options": ["<mk>fruit_info ['price'] = 1.5</mk>",
+				"<mk>my_list [3.5] = 1.5</mk>",
+				"<mk>1.5 = fruit_info ['price]</mk>",
+				"<mk>my_list['price'] == 1.5</mk>"
+			],
+			"CorrectAnswer": "0"
+		},
+		"16": {
+			"Question": "What value would be returned by this check for equality?<br><mk>5 != 6</mk>",
+			"Options": ["<mk>yes</mk>",
+				"<mk>False</mk>",
+				"<mk>True</mk>",
+				"<mk>None</mk>"
+			],
+			"CorrectAnswer": "2"
+		},
+		"17": {
+			"Question": "What does a class's <mk>__init__()</mk> method do?",
+			"Options": ["It makes classes aware of each other if more than one class is defined in a single code file.",
+				"It is included to preserve backwards compatibility from Python 3 to Python 2, but no longer needs to be used in Python 3.",
+				"It is a method that acts as a constructor and is called automatically whenever a new object is created from a class. It sets the initial state of a new object.",
+				"It initializes any imports you may have included at the top of your file."
+			],
+			"CorrectAnswer": "2"
+		},
+		"18": {
+			"Question": "What is the correct syntax for creating a variable that is bound to a dictionary?",
+			"Options": ["<mk>fruit_info = {'fruit': 'apple', 'count': 2, 'price': 3.5}</mk>",
+				"<mk>fruit_info =('fruit': 'apple', 'count': 2,'price': 3.5 ).dict()</mk>",
+				"<mk>fruit_info = ['fruit': 'apple', 'count': 2,'price': 3.5 ].dict()</mk>",
+				"<mk>fruit_info = to_dict('fruit': 'apple', 'count': 2, 'price': 3.5)</mk>"
+			],
+			"CorrectAnswer": "0"
+		},
+		"19": {
+			"Question": "What is the proper way to write a list comprehension that represents all the keys in this dictionary?<br><mk>fruits = {'Apples': 5, 'Oranges': 3, 'Bananas': 4}</mk>",
+			"Options": ["<mk>fruit_names = [x in fruits.keys() for x]</mk>",
+				"<mk>fruit_names = for x in fruits.keys() *</mk>",
+				"<mk>fruit_names = [x for x in fruits.keys()]</mk>",
+				"<mk>fruit_names = x for x in fruits.keys()</mk>"
+			],
+			"CorrectAnswer": "2"
+		},
+		"20": {
+			"Question": "What is the proper way to define a function?",
+			"Options": ["<mk>def getMaxNum(list_of_nums): # body of function goes here</mk>",
+				"<mk>func get_max_num(list_of_nums): # body of function goes here</mk>",
+				"<mk>func getMaxNum(list_of_nums): # body of function goes here</mk>",
+				"<mk>def get_max_num(list_of_nums): # body of function goes here</mk>"
+			],
+			"CorrectAnswer": "3"
+		},
+		"21": {
+			"Question": "What is the correct syntax for creating a variable that is bound to a set?",
+			"Options": ["<mk>my_set = {0, 'apple', 3.5}</mk>",
+				"<mk>my_set = to_set(0, 'apple', 3.5)</mk>",
+				"<mk>my_set = (0, 'apple', 3.5).to_set()</mk>",
+				"<mk>my_set = (0, 'apple', 3.5).set()</mk>"
+			],
+			"CorrectAnswer": "0"
+		},
+		"22": {
+			"Question": "What is the correct syntax for defining an <mk>__init__()</mk> method that takes no parameters?",
+			"Options": ["<mk>class __init__(self):<br>    pass</mk>",
+				"<mk>def __init__():<br>    pass</mk>",
+				"<mk>class __init__():<br>    pass</mk>",
+				"<mk>def __init__(self):<br>    pass</mk>"
+			],
+			"CorrectAnswer": "3"
+		},
+		"23": {
+			"Question": "What would happen if you did not alter the state of the element that an algorithm is operating on recursively?",
+			"Options": ["You do not have to alter the state of the element the algorithm is recursing on.",
+				"You would eventually get a KeyError when the recursive portion of the code ran out of items to recurse on.",
+				"You would get a RuntimeError: maximum recursion depth exceeded.",
+				"The function using recursion would return None."
+			],
+			"CorrectAnswer": "2"
+		},
+		"24": {
+			"Question": "What is a lambda function ?",
+			"Options": ["any function that makes use of scientific or mathematical constants, often represented by Greek letters in academic writing",
+				"any function whose definition is contained within five lines of code or fewer",
+				"a function that get executed when decorators are used",
+				"a small, anonymous function that can take any number of arguments but has only expression to evaluate"
+			],
+			"CorrectAnswer": "3"
+		},
+		"25": {
+			"Question": "What does a generator return?",
+			"Options": ["A linked list data structure from a non-empty list",
+				"An iterable object",
+				"All the keys of the given dictionary",
+				"None"
+			],
+			"CorrectAnswer": "1"
+		},
+		"26": {
+			"Question": "How is comment created?",
+			"Options": ["<mk>-- This is a comment</mk>",
+				"<mk># This is a comment</mk>",
+				"<mk>/_ This is a comment _/</mk>",
+				"<mk>// This is a comment</mk>"
+			],
+			"CorrectAnswer": "1"
+		},
+		"27": {
+			"Question": "What is the correct syntax for replacing the string apple in the list with the string orange?<br><mk>my_list = ['kiwi', 'apple', 'banana']</mk>",
+			"Options": ["<mk>orange = my_list[1]</mk>",
+				"<mk>my_list[1] = 'orange'</mk>",
+				"<mk>my_list['orange'] = 1</mk>",
+				"<mk>my_list[1] == orange</mk>"
+			],
+			"CorrectAnswer": "1"
+		},
+		"28": {
+			"Question": "When would you use a <mk>while</mk> loop?",
+			"Options": ["when you want to minimize the use of strings in your code",
+				"when you want some code to continue running as long as some condition is true",
+				"when you need to run two or more chunks of code at once within the same file",
+				"when you want to run code in one file while code in another file is also running"
+			],
+			"CorrectAnswer": "1"
+		},
+		"29": {
+			"Question": "In Python, when using sets, you use _ to calculate the intersection between two sets and _ to calculate the union.",
+			"Options": ["<mk>Intersect</mk>; <mk>union</mk>",
+				"<mk>|</mk>; <mk>&</mk>",
+				"<mk>&</mk>; <mk>|</mk>",
+				"<mk>&&</mk>; <mk>||</mk>"
+			],
+			"CorrectAnswer": "2"
+		},
+		"30": {
+			"Question": "Which mode is not a valid way to access a file from within a Python script?",
+			"Options": ["<mk>write('w')</mk>",
+				"<mk>scan('s')</mk>",
+				"<mk>append('a')</mk>",
+				"<mk>read('r')</mk>"
+			],
+			"CorrectAnswer": "1"
+		}
+	},
+
+	"Mathematics" : {
+		"1" : {
+			"Question" : "Find the compound interest on $125000, if Mike took loan from a bank for 9 months at 8% per annum, compounded quarterly.",
+			"Options" : ["$7500",
+				"$7651",
+				"$7600",
+				"$7561"],
+			"CorrectAnswer" : "1"
+		},
+		"2" : {
+			"Question" : "Solve the inequation 2(x – 4) ≥ 3x – 5.",
+			"Options" : ["x ≤ - 3",
+				"x ≥ - 3",
+				"x ≤ 3",
+				"x ≥ 3"],
+			"CorrectAnswer" : "0"
+		},
+		"3" : {
+			"Question" : "Find the remainder when $ 4x^{3} - 3x^{2} + 2x - 4 $ is divided by $ x + 2 $.",
+			"Options" : ["52",
+				"4",
+				"-52",
+				"-4"],
+			"CorrectAnswer" : "2"
+		},
+		"4" : {
+			"Question" : "The present age of two persons are in the ratio 4 : 3. Nine years hence their ages will be in the ratio 23 : 18. Find their present ages.",
+			"Options" : ["60 years, 45 years",
+				"60 years, 35 years",
+				"50 years, 35 years",
+				"50 years, 45 years"],
+			"CorrectAnswer" : "0"
+		},
+		"5" : {
+			"Question" : "The average weight of 10 men is decreased by 2 kg when one of them whose weight is 60 kg is replaced by a new man. What is the weight of the new man?",
+			"Options" : ["35 kg",
+				"40 kg",
+				"45 kg",
+				"50 kg"],
+			"CorrectAnswer" : "1"
+		},
+		"6" : {
+			"Question" : "Given that 1 + 2 + 3 + ... + 9 = 45, find the value of (11 + 12 + 13 + ... + 19).",
+			"Options" : ["125",
+				"130",
+				"135",
+				"140"],
+			"CorrectAnswer" : "2"
+		},
+		"7" : {
+			"Question" : "Raju started a business with Rs. 900. Kamal joined him after few months with an amount of 600. If the profits at the end of the year were divided in the ratio of 2:1, after how many months Kamal joined the business?",
+			"Options" : ["3 months",
+				"9 months",
+				"5 months",
+				"8 months"],
+			"CorrectAnswer" : "0"
+		},
+		"8" : {
+			"Question" : "The day on 5th April of a year will be the same day on 5th of which month of the same year?",
+			"Options" : ["5th June",
+				"5th August",
+				"5th July",
+				"5th October"],
+			"CorrectAnswer" : "2"
+		},
+		"9" : {
+			"Question" : "A boat takes 6 hours to move downstream from point P to Q and to return to point P moving upstream. If the speed of the stream is 4 km/hr and speed of the boat in still water is 6 km/hr, what is the distance between point P and Q?",
+			"Options" : ["8 km",
+				"9 km",
+				"10 km",
+				"11 km"],
+			"CorrectAnswer" : "2"
+		},
+		"10" : {
+			"Question" : "A watch which gains uniformly is 5 minutes slow at 6am on Monday and is 5 minutes 48 seconds fast at 6pm on the following Monday. When was it correct?",
+			"Options" : ["5:20 pm on Wednesday",
+				"5:20 pm on Thursday",
+				"4:20 pm on Wednesday",
+				"4:20 pm on Thursday"],
+			"CorrectAnswer" : "1"
+		},
+		"11" : {
+			"Question" : "A man sees the top of a tower from a point P. It makes an angle of elevation of 30° with the man's eyes. If the height of the tower is 100 m, find the distance between man and tower?",
+			"Options" : ["173 m",
+				"140 m",
+				"57.8 m",
+				"110 m"],
+			"CorrectAnswer" : "0"
+		},
+		"12" : {
+			"Question" : "On increasing the price of tickets for a show by 20% the audience decreases by 30%. What is the effect on revenue?",
+			"Options" : ["16% increase",
+				"16% decrease",
+				"4% increase",
+				"4% decrease"],
+			"CorrectAnswer" : "1"
+		},
+		"13" : {
+			"Question" : "If a man runs at 24 km/hr instead of 20 km/hr he could run 40 km more. Find the actual distance travelled by him.",
+			"Options" : ["300 km",
+				"250 km",
+				"150 km",
+				"200 km"],
+			"CorrectAnswer" : "3"
+		},
+		"14" : {
+			"Question" : "A moneylender charges Rs. 180 as simple interest on a sum of Rs. 600 for four months. What is the rate of interest per annum?",
+			"Options" : ["85%",
+				"80%",
+				"95%",
+				"90%"],
+			"CorrectAnswer" : "3"
+		},
+		"15" : {
+			"Question" : "A man is running at 10 km/hr in a parallel track in the same direction of a train which is moving at 55 km/hr. He is 260 meters ahead of the train. If the length of train is 140 meters, in what time the train will cross the man?",
+			"Options" : ["32 seconds",
+				"34 seconds",
+				"36 seconds",
+				"38 seconds"],
+			"CorrectAnswer" : "0"
+		},
+		"16" : {
+			"Question" : "A hostel has sufficient food for 200 students for 50 days. After 10 days, 50 more students join the hostel. Now, the food will continue for how many days?",
+			"Options" : ["20 days",
+				"32 days",
+				"40 days",
+				"50 days"],
+			"CorrectAnswer" : "1"
+		},
+		"17" : {
+			"Question" : "A rice dealer bought 60 kg of rice worth Rs. 30 per kg and 40 kg of rice worth Rs. 35 per kg. He mixes the two and sells the mixture at Rs. 40 per kg. What is the percentage profit in this deal?",
+			"Options" : ["15%",
+				"21%",
+				"23%",
+				"25%"],
+			"CorrectAnswer" : "3"
+		},
+		"18" : {
+			"Question" : "What is the least multiple of 7 which when divided by 6, 9, 15, and 18 respectively, leaves 4 as the remainder in each case?",
+			"Options" : ["364",
+				"255",
+				"385",
+				"266"],
+			"CorrectAnswer" : "0"
+		},
+		"19" : {
+			"Question" : "The area of a rectangular plot is increased by 30% and its width remains as it was before. What will be the ratio between the area of the new rectangle and the original rectangle?",
+			"Options" : ["10:3",
+				"13:10",
+				"3:7",
+				"Data inadequate"],
+			"CorrectAnswer" : "1"
+		},
+		"20" : {
+			"Question" : "In a 100 m race, A covers the distance in 36 seconds and B covers in 45 seconds. In this race, A beats B by",
+			"Options" : ["20 m",
+				"25 m",
+				"22.5 m",
+				"9 m"],
+			"CorrectAnswer" : "0"
+		},
+		"21" : {
+			"Question" : "In a group of students, there are 15 boys and 10 girls. If three students are selected at random, what is the probability that 1 girl and 2 boys are selected?",
+			"Options" : ["21/46",
+				"21/36",
+				"21/26",
+				"21/56"],
+			"CorrectAnswer" : "0"
+		},
+		"22" : {
+			"Question" : "A man tossed two dice. What is the probability that the total score is a prime number?",
+			"Options" : ["5/24",
+				"5/14",
+				"5/20",
+				"5/12"],
+			"CorrectAnswer" : "3"
+		},
+		"23" : {
+			"Question" : "A meter is taken to be equal to 39.3701 inches. If the value is approximated to 39+[7/20] inches, the relative percentage error is",
+			"Options" : ["5%",
+				"0.05%",
+				"0.005%",
+				"0.5%"],
+			"CorrectAnswer" : "1"
+		},
+		"24" : {
+			"Question" : "The smallest number which when multiplied to 3600 yields perfect cube is",
+			"Options" : ["40",
+				"50",
+				"60",
+				"100"],
+			"CorrectAnswer" : "2"
+		},
+		"25" : {
+			"Question" : "In what ways the letters of the word “CRICKET” can be arranged to form the different new words so that the vowels always come together?",
+			"Options" : ["120",
+				"240",
+				"360",
+				"480"],
+			"CorrectAnswer" : "0"
+		},
+		"26" : {
+			"Question" : "A box contains 2 red balls, 3 black balls, and 4 white balls. Find the number of ways by which 3 balls can be drawn from the box in which at least 1 black ball should be present.",
+			"Options" : ["48",
+				"64",
+				"96",
+				"32"],
+			"CorrectAnswer" : "1"
+		},
+		"27" : {
+			"Question" : "The next number of the sequence 0, 7, 26, 63, ......",
+			"Options" : ["124",
+				"126",
+				"215",
+				"217"],
+			"CorrectAnswer" : "0"
+		},
+		"28" : {
+			"Question" : "Find the logarithm of 1/256 to the base 2√2.",
+			"Options" : ["16",
+				"13/5",
+				"-16/3",
+				"12"],
+			"CorrectAnswer" : "2"
+		},
+		"29" : {
+			"Question" : "In the given expression (1.05)2*x = 44.1, find the value of x.",
+			"Options" : ["40.00",
+				"40.01",
+				"42.00",
+				"42.01"],
+			"CorrectAnswer" : "0"
+		},
+		"30" : {
+			"Question" : "What is the number of trailing zeroes in 23!?",
+			"Options" : ["5",
+				"4",
+				"3",
+				"2"],
+			"CorrectAnswer" : "1"
+		}
+	}
+}

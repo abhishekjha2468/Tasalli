@@ -33,9 +33,18 @@ def pages_render(section):
 #     text=f.read()
 #     f.close()
     try:
+        if section=='skillTest':
+            return "skillTest api is shifted to /Tests/<skill>"
         return render_template(section+".html")
     except:
         return f"{section} page is not build"
+
+@app.route("/Tests/<skill>", methods=['GET','POST'])
+def testing_skill(skill):
+    try:
+        return render_template("skillTest.html", skillname=skill)
+    except:
+        return f"We are not having any skill test for {skill}"
 
 @app.route("/", methods=['GET','POST'])
 def Landing_page():
@@ -102,7 +111,7 @@ def checkPassword(emailid,password):
 # def dashboard():
 #     return 'Welcome To Dashboard'
 
-@app.route("/signupSubmit", methods=['GET','POST'])
+@app.route("/api/signupSubmit", methods=['GET','POST'])
 def signup_submit():
     name = request.form["fullname"]
     emailid=request.form["emailid"]
@@ -115,7 +124,7 @@ def signup_submit():
         result=saveUserData(name,emailid,phoneNumber,password)
         return dashboard()
 
-@app.route("/loginSubmit", methods=['GET','POST'])
+@app.route("/api/loginSubmit", methods=['GET','POST'])
 def login_submit():
     emailid = request.form["emailid"]
     password = request.form["password"]
@@ -131,6 +140,15 @@ def test_json():
           {"Task_header": "Bug in buildng docker image","Task_defination":"How to install docker desktop","Higest_price":110,"Lowest_price":45},
           {"Task_header": "How to use postman","Task_defination":"Need to test api's with multiple methods GET,POST,PUT,DELETE, etc..","Higest_price":90,"Lowest_price":50}]
     return jsonify(data)
+
+@app.route("/api/skilltest/<skill>", methods=['GET'])
+def skillTest(skill):
+    try:
+        f = open('test.json')
+        data = json.load(f)
+        return jsonify(random.sample(list(data[skill].values()),10))
+    except:
+        return f"We are not having any skill test for {skill}"
 #
 #
 #
