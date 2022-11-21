@@ -149,6 +149,13 @@ def skillTest(skill):
         return jsonify(random.sample(list(data[skill].values()),10))
     except:
         return f"We are not having any skill test for {skill}"
+
+@app.route("/api/skilltestlist", methods=['GET'])
+def skillList():
+    f = open('test.json')
+    data = json.load(f)
+    return jsonify([{"skills": list(data.keys())}])
+
 #
 #
 #
