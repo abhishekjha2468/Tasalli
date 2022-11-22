@@ -911,5 +911,255 @@
 				"2"],
 			"CorrectAnswer" : "1"
 		}
+	},
+	"Science" : {
+		"1" : {
+			"Question" : "Cells present in living organism differ in",
+			"Options" : ["(a) numbers",
+                 "(b) shape",
+                 "(c) size",
+                 "(d) all of these"],
+			"CorrectAnswer" : "3"
+		},
+		"2" : {
+			"Question" : "The metal which is not corroded by air, water and acid is",
+			"Options" : ["(a) copper",
+            "(b) zinc",
+                "(c) aluminium",
+              "(d) gold"],
+			"CorrectAnswer" : "3"
+		},
+		"3" : {
+			"Question" : "Boron is",
+			"Options" : ["(a) metal",
+            "(b) metalloid",
+             "(c) non-metal",
+               "(d) alkali"],
+			"CorrectAnswer" : "1"
+		},
+		"4" : {
+			"Question" : "Friction can be reduced by using",
+			"Options" : ["(a) oil",
+             "(b) grease",
+            "(c) powder",
+              "(d) all of these"],
+			"CorrectAnswer" : "3"
+		},
+		"5" : {
+			"Question" : "Minerals are",
+			"Options" : ["(a) natural resources.",
+                   "(b) inexhaustible natural resources",
+                 "(c) exhaustible natural resources",
+                "(d) all of these"],
+			"CorrectAnswer" : "2"
+		},
+		"6" : {
+			"Question" : "Conversion of dead vegetation into coal is called",
+			"Options" : ["(a) carbonisation",
+"(b) distillation",
+"(c) coal gas",
+"(d) natural gas"],
+			"CorrectAnswer" : "0"
+		},
+		"7" : {
+			"Question" : "In SONAR, we use",
+			"Options" : ["(a) ultrasonic waves",
+"(b) infrasonic waves",
+"c) radio waves",
+"(d) audible sound waves"],
+			"CorrectAnswer" : "2"
+		},
+		"8" : {
+			"Question" : "Earthquake produces which kind of sound before the main shock wave begins",
+			"Options" : ["(a) ultrasound",
+"(b) infrasound",
+"(c) audible sound",
+"(d) none of the above"],
+			"CorrectAnswer" : "0"
+		},
+		"9" : {
+			"Question" : "One of the following factors does not lead to soil formation in nature.",
+			"Options" : ["(a) the Sun",
+"(b) water",
+"(c) wind",
+"(d) polythene bags"],
+			"CorrectAnswer" : "3"
+		},
+		"10" : {
+			"Question" : "The value of quantity G in the law of gravitation",
+			"Options" : ["(a) depends on mass of Earth only",
+"(b) depends on radius of Earth only",
+"(c) depends on both mass and radius of Earth",
+"(d) is independent of mass and radius of the Earth"],
+			"CorrectAnswer" : "3"
+		},
+		"11" : {
+			"Question" : "The molecule having an atomicity of 4 is:",
+			"Options" : ["(a) Sulphate molecule",
+"(b) Ozone molecule",
+"(c) Phosphorus molecule",
+"(d) Methane molecule"],
+			"CorrectAnswer" : "2"
+		},
+		"12" : {
+			"Question" : "Electrical resistivity of a given metallic wire depends upon",
+			"Options" : ["(a) its length",
+"(b) its thickness",
+"(c) its shape",
+"(d) nature of the material"],
+			"CorrectAnswer" : "3"
+		},
+
+		"13" : {
+			"Question" : "The surface of water in contact with glass wall is",
+			"Options" : ["(a) Plane",
+"(b) concave",
+"(c) convex",
+"(d) Both b and c"],
+			"CorrectAnswer" : "1"
+		},
+		"14" : {
+			"Question" : "The height of a liquid in a fine capillary tube",
+			"Options" : ["(a) Increases with an increase in the density of a liquid",
+"(b) Decreases with a decrease in the diameter of the tube",
+"(c) Decreases with an increase in the surface tension",
+"(d) Increases as the effective value of acceleration due to gravity is decreased"],
+			"CorrectAnswer" : "3"
+		},
+
+		"15" : {
+			"Question" : "The force required to produce an acceleration of 2 m/s² on a mass of 2 kg is",
+			"Options" : ["(a) 4 N",
+"(b) 10 N",
+"(c) 22 N",
+"(d) 18 N"],
+			"CorrectAnswer" : "0"
+		},
+		"16" : {
+			"Question" : "The mass of a body is 2 kg. It weight is",
+			"Options" : ["(a) 19.6 N",
+"(b) 20 N",
+"(c) 30 N",
+"(d) 40 N"],
+			"CorrectAnswer" : "0"
+		},
+
+		"17" : {
+			"Question" : "Which one is a process in which water changes into vapours in atmosphere?",
+			"Options" : ["(a) Evaporation",
+"(b) transpiration",
+"(c) Precipitation",
+"(d) condensation"],
+			"CorrectAnswer" : "0"
+		},
+		"18" : {
+			"Question" : "Filtration is a method to separate the components of a",
+			"Options" : ["(a) solution",
+"(b) mixture of a liquid and an insoluble substance",
+"(c) both (a) and (b)",
+"(d) pure substance"],
+			"CorrectAnswer" : "1"
+		},
+		"19" : {
+			"Question" : "Which is an example of an insulator",
+			"Options" : ["(a) bakelite",
+"(b) aluminium",
+"(c) tap water",
+"(d) All of these"],
+			"CorrectAnswer" : "0"
+		},
+
+
+		"20" : {
+			"Question" : "Heart failure occurs due to",
+			"Options" : ["(a) heart stops beating",
+"(b) damage of heart muscles",
+"(c) congestion of lungs",
+"(d) all of the above"],
+			"CorrectAnswer" : "2"
+		},
+
+		"21" : {
+			"Question" : "Which of the following oxides is not expected to react with sodium hydroxide?",
+			"Options" : ["(a) CaO",
+"(b) SiO2",
+"(c) BeO",
+"(d) B2O3"],
+			"CorrectAnswer" : "0"
+		},
+
+		"22" : {
+			"Question" : "Which of the following statement is wrong for gases?",
+			"Options" : ["(a) Gases do not have definite shape and volume",
+"(b) Volume of the gas is equal to the volume of the container confining the gas",
+"(c) Confined gas exert uniform pressure on the wall of the container in all directions",
+"(d) Mass of the gas cannot be determined by weighing a container in which it is contained"],
+			"CorrectAnswer" : "3"
+		},
+		"23" : {
+			"Question" : "Which of the following plants is used extensively for the study of photosynthesis?",
+			"Options" : ["(a) Amaranthus",
+"(b) Asparagus",
+"(c) Chlorella",
+"(d) Sunflower"],
+			"CorrectAnswer" : "2"
+		},
+
+		"24" : {
+			"Question" : "At critical temperature, the surface tension of a liquid",
+			"Options" : ["(a) Is zero",
+"(b) Is infinity",
+"(c) Is the same as that at any other temperature",
+"(d) Can not be determined"],
+			"CorrectAnswer" : "0"
+		},
+		"25" : {
+			"Question" : "Hydrogen has isotopes",
+			"Options" : ["(a) 2",
+"(b) 3",
+"(c) 4",
+"(d) 5"],
+			"CorrectAnswer" : "2"
+		},
+		"26" : {
+			"Question" : "The respiratory pigment in human beings is:",
+			"Options" : ["(a) carotene",
+"(b) chlorophyll",
+"(c) haemoglobin",
+"(d) mitochondria"],
+			"CorrectAnswer" : "2"
+		},
+		"27" : {
+			"Question" : "A beam of light incident on a plane mirror forms a real image on reflection. The incident beam is :",
+			"Options" : ["(a) parallel",
+"(b) convergent",
+"(c) divergent",
+"(d) not certain"],
+			"CorrectAnswer" : "1"
+		},
+		"28" : {
+			"Question" : "pH value less than 7 indicates that the solution is –",
+			"Options" : ["(A) Acidic",
+"(B) Basic",
+"(C) Neutral",
+"(D) No effect"],
+			"CorrectAnswer" : "0"
+		},
+		"29" : {
+			"Question" : " Which of the following is the correct order of the atomic radii of the elements oxygen, fluorine and nitrogen?",
+			"Options" : ["a) O < F < N",
+"b) N < F < O",
+"c) O < N < F",
+"d) F < O < N"],
+			"CorrectAnswer" : "3"
+		},
+		"30" : {
+			"Question" : " Unit of electric power may also be expressed as",
+			"Options" : ["(a) volt ampere",
+"(b) kilowatt hour",
+"(c) watt second",
+"(d) joule second"],
+			"CorrectAnswer" : "1"
+		}
 	}
 }
