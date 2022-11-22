@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Learner Dashboard</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
   <style>
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -63,7 +63,7 @@
       margin-right: 0.5em;
     }
   </style>
-  <link href="css/headers.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/headers.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -120,7 +120,7 @@
   <nav class="py-2 bg-light border-bottom">
     <div class="container d-flex flex-wrap" style="max-width: 100%;">
         <ul class="nav me-auto">
-            <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Contact Us</a></li>
+            <li class="nav-item"><a href="/contactus" class="nav-link link-dark px-2 active" aria-current="page">Contact Us</a></li>
             <li class="nav-item"><a href="#" class="nav-link link-dark px-2">About</a></li>
         </ul>
         <ul class="nav">
@@ -162,8 +162,8 @@
   </button>
   <ul class="dropdown-menu">
     
-      <li><a class="dropdown-item" href="http://127.0.0.1:5500/homepage_expert.html">Expert</a></li>
-      <li><a class="dropdown-item" href="http://127.0.0.1:5500/homepage_learner.html">Learner</a></li>
+      <li><a class="dropdown-item" href="/homepage_expert">Expert</a></li>
+      <li><a class="dropdown-item" href="/homepage_learner">Learner</a></li>
     
   </ul>
 </div>
@@ -176,7 +176,7 @@
   <ul class="dropdown-menu" style="text-align: center;">
     <li><a class="dropdown-item" href="#">Tasallii user</a></li>
     <li><a class="dropdown-item" href="#">tasallii242@gmail.com</a></li>
-    <li><a class="dropdown-item" href="#">Settings</a></li>
+    <li><a class="dropdown-item" href="/settings">Settings</a></li>
     <li><a class="dropdown-item" href="#">Logout</a></li>
   </ul>
 </div>
@@ -192,18 +192,18 @@
 
   <div class="container  px-4" style="flex: 0 0 auto; max-width: 100%; padding-top: 0.5rem !important;
       padding-bottom: 0.5rem !important;">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5" style="margin-left: 4em;margin-right: 4em;">
       <div class="col-10 col-sm-8 col-lg-6">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img/Screenshot 2022-11-15 223620.png" class="d-block w-100" alt="...">
+              <img src="{{ url_for('static', filename='img/Screenshot 2022-11-15 223620.png') }}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="img/Screenshot 2022-11-15 223620.png" class="d-block w-100" alt="...">
+              <img src="{{ url_for('static', filename='img/Screenshot 2022-11-15 223620.png') }}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="img/Screenshot 2022-11-15 223620.png" class="d-block w-100" alt="...">
+              <img src="{{ url_for('static', filename='img/Screenshot 2022-11-15 223620.png') }}" class="d-block w-100" alt="...">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -222,8 +222,8 @@
         <h2 class="display-5 fw-bold lh-1 mb-3">Get highly paid for the knowledge you have</h2>
         <p class="lead">Earn money by assisting others.Make every penny count. We’re A Team That Guides Each Other. Finding The Right Person For The Right Job. We Find The Right Person For You. Make Money By Doing What You Love</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4" style="width: 14em;"><a class="dropdown-item" href="http://127.0.0.1:5500/homepage_expert.html">Expert</a></button>
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" style="width: 14em;"><a class="dropdown-item" href="http://127.0.0.1:5500/homepage_learner.html">Learner</a></button>
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" style="width: 14em;"><a class="dropdown-item" href="/new_issue">Post your requirement</a></button>
+<!--          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" style="width: 14em;"><a class="dropdown-item" href="/homepage_learner">Learner</a></button>-->
         </div>
       </div>
     </div>
@@ -267,30 +267,30 @@
   </div> -->
  <!--component not needed ended-->
 <!--carousel of learner started-->
-<div class="row featurette" style="margin:  20px;">
-  <div class="col-md-7 order-md-2" style="margin-top: 123px;">
-    <h1 class="featurette-heading fw-normal lh-1" style="text-align: center;">Learner</h1>
-    <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-  </div>
-  <div class="col-md-5 order-md-1">
-    <img src="img/Screenshot 2022-11-15 223620.png" class="d-block w-100" alt="...">
+<!-- <div class="row featurette" style="margin:  20px; margin-left: 4em;margin-right: 4em;" >-->
+<!--  <div class="col-md-7 order-md-2" style="margin-top: 123px;">-->
+<!--    <h1 class="featurette-heading fw-normal lh-1" style="text-align: center;">Learner</h1>-->
+<!--    <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>-->
+<!--  </div>-->
+<!--  <div class="col-md-5 order-md-1">-->
+<!--    <img src="{{ url_for('static', filename='img/Screenshot 2022-11-15 223620.png') }}" class="d-block w-100" alt="...">-->
 
-  </div>
-</div>
+<!--  </div>-->
+<!--</div>-->
 <!--carousel of learner started-->
 
  <!--carousel of expert started-->
- <div class="row featurette" style="margin: 20px;">
-  <div class="col-md-7" style="margin-top: 123px;">
-    <h1 class="featurette-heading fw-normal lh-1"  style="text-align: center;" >Expert</h1>
-    <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-  </div>
-  <div class="col-md-5">
-    
-    <img src="img/Screenshot 2022-11-15 223620.png" class="d-block w-100" alt="Image cannot be displayed.">
+<!-- <div class="row featurette" style="margin: 20px;">-->
+<!--  <div class="col-md-7" style="margin-top: 123px;">-->
+<!--    <h1 class="featurette-heading fw-normal lh-1"  style="text-align: center;" >Expert</h1>-->
+<!--    <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>-->
+<!--  </div>-->
+<!--  <div class="col-md-5">-->
+<!--    -->
+<!--    <img src="{{ url_for('static', filename='img/Screenshot 2022-11-15 223620.png') }}" class="d-block w-100" alt="Image cannot be displayed.">-->
 
-  </div>
-</div>
+<!--  </div>-->
+<!--</div>-->
 
  <!--carousel of expert ended-->
 
@@ -366,7 +366,7 @@
   </footer>
     <!--footer ended-->
 
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
 </body>
 
 </html>
