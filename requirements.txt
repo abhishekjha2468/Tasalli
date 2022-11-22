@@ -14,3 +14,5 @@ mysql-connector-python
 mysqlclient
 gunicorn
 favicon
+numpy
+pandas
