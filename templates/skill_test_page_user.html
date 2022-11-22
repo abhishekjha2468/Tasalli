@@ -125,11 +125,11 @@
    <nav class="py-2 bg-light border-bottom">
     <div class="container d-flex flex-wrap" style="max-width: 100%;">
         <ul class="nav me-auto">
-            <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Contact Us</a></li>
-            <li class="nav-item"><a href="#" class="nav-link link-dark px-2">About</a></li>
+            <li class="nav-item"><a href="/contactus" class="nav-link link-dark px-2 active" aria-current="page">Contact Us</a></li>
+            <li class="nav-item"><a href="/aboutus" class="nav-link link-dark px-2">About</a></li>
         </ul>
         <ul class="nav">
-          <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Skill Test</a></li>
+          <li class="nav-item"><a href="/skill_test_page_user" class="nav-link link-dark px-2">Skill Test</a></li>
             
             <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Dashboard</a></li>
             <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Log out</a></li>
@@ -155,8 +155,8 @@
   </button>
   <ul class="dropdown-menu">
     
-      <li><a class="dropdown-item" href="http://127.0.0.1:5500/homepage_expert.html">Expert</a></li>
-      <li><a class="dropdown-item" href="http://127.0.0.1:5500/homepage_learner.html">Learner</a></li>
+      <li><a class="dropdown-item" href="/homepage_expert">Expert</a></li>
+      <li><a class="dropdown-item" href="/homepage_learner">Learner</a></li>
     
   </ul>
 </div>
@@ -169,7 +169,7 @@
   <ul class="dropdown-menu" style="text-align: center;">
     <li><a class="dropdown-item" href="#">Tasallii user</a></li>
     <li><a class="dropdown-item" href="#">tasallii242@gmail.com</a></li>
-    <li><a class="dropdown-item" href="#">Settings</a></li>
+    <li><a class="dropdown-item" href="/settings">Settings</a></li>
     <li><a class="dropdown-item" href="#">Logout</a></li>
   </ul>
 </div>
@@ -308,12 +308,33 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <!--script started -->
   <script>
-
+  out=`<div class="card" style="margin-left: 3em; margin-right:3em">
+      <div class="card-body">
+        <div class="row">
+          <div class="col">
+        <h5 class="card-title">Python</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Highly paid language till now.
+        </h6>
+        <p class="card-text">Clear the skill test to explore teh jobs of python.
+        </p>
+      </div>
+      <div class="col-md-auto">
+      <button type="button" class="btn btn-warning">
+        Give Skill Test
+      </button>
+      <button type="button" class="btn btn-success">
+        Explore jobs
+      </button>
+      </div>
+        </div>
+      </div>
+    </div>`
 
    
 
   </script>
   <!--script ended -->
+
 </body>
 
 </html>
